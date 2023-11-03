@@ -80,6 +80,7 @@ public class BaseFrame extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         ManagePanel = new javax.swing.JPanel();
         newStudentPanel = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -389,21 +390,21 @@ public class BaseFrame extends javax.swing.JFrame {
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(381, 381, 381))
-            .addGroup(panel1Layout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1042, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1042, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(panel1Layout.createSequentialGroup()
+                        .addGap(175, 175, 175)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(59, 59, 59))
         );
         panel1Layout.setVerticalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel1Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 527, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
 
         jButton1.setBackground(new java.awt.Color(255, 51, 51));
@@ -415,11 +416,13 @@ public class BaseFrame extends javax.swing.JFrame {
         AllStdudentAtt.setLayout(AllStdudentAttLayout);
         AllStdudentAttLayout.setHorizontalGroup(
             AllStdudentAttLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(AllStdudentAttLayout.createSequentialGroup()
+                .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1053, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 480, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AllStdudentAttLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(115, 115, 115))
         );
         AllStdudentAttLayout.setVerticalGroup(
             AllStdudentAttLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -559,7 +562,7 @@ public class BaseFrame extends javax.swing.JFrame {
                             .addGroup(panel2Layout.createSequentialGroup()
                                 .addGap(83, 83, 83)
                                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(624, Short.MAX_VALUE))
         );
         panel2Layout.setVerticalGroup(
             panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -649,6 +652,17 @@ public class BaseFrame extends javax.swing.JFrame {
             .addGap(0, 634, Short.MAX_VALUE)
         );
 
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 572, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 532, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout UniversityManagementBasePanelLayout = new javax.swing.GroupLayout(UniversityManagementBasePanel);
         UniversityManagementBasePanel.setLayout(UniversityManagementBasePanelLayout);
         UniversityManagementBasePanelLayout.setHorizontalGroup(
@@ -658,12 +672,12 @@ public class BaseFrame extends javax.swing.JFrame {
                 .addGroup(UniversityManagementBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(HeadingLabel)
                     .addComponent(newStudentPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(274, Short.MAX_VALUE))
+                .addContainerGap(800, Short.MAX_VALUE))
             .addGroup(UniversityManagementBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(UniversityManagementBasePanelLayout.createSequentialGroup()
                     .addGap(18, 18, 18)
                     .addComponent(ManagePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(13, Short.MAX_VALUE)))
+                    .addContainerGap(539, Short.MAX_VALUE)))
             .addGroup(UniversityManagementBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(UniversityManagementBasePanelLayout.createSequentialGroup()
                     .addContainerGap()
@@ -672,8 +686,13 @@ public class BaseFrame extends javax.swing.JFrame {
             .addGroup(UniversityManagementBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(UniversityManagementBasePanelLayout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(AllStdudentAtt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
+                    .addComponent(AllStdudentAtt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(117, Short.MAX_VALUE)))
+            .addGroup(UniversityManagementBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(UniversityManagementBasePanelLayout.createSequentialGroup()
+                    .addGap(306, 306, 306)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(778, Short.MAX_VALUE)))
         );
         UniversityManagementBasePanelLayout.setVerticalGroup(
             UniversityManagementBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -682,10 +701,10 @@ public class BaseFrame extends javax.swing.JFrame {
                 .addComponent(HeadingLabel)
                 .addGap(58, 58, 58)
                 .addComponent(newStudentPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
             .addGroup(UniversityManagementBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, UniversityManagementBasePanelLayout.createSequentialGroup()
-                    .addGap(0, 151, Short.MAX_VALUE)
+                    .addGap(0, 193, Short.MAX_VALUE)
                     .addComponent(ManagePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
             .addGroup(UniversityManagementBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(UniversityManagementBasePanelLayout.createSequentialGroup()
@@ -694,8 +713,13 @@ public class BaseFrame extends javax.swing.JFrame {
                     .addContainerGap(51, Short.MAX_VALUE)))
             .addGroup(UniversityManagementBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, UniversityManagementBasePanelLayout.createSequentialGroup()
-                    .addGap(0, 115, Short.MAX_VALUE)
+                    .addGap(0, 120, Short.MAX_VALUE)
                     .addComponent(AllStdudentAtt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(UniversityManagementBasePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(UniversityManagementBasePanelLayout.createSequentialGroup()
+                    .addGap(150, 150, 150)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(117, Short.MAX_VALUE)))
         );
 
         Base.add(UniversityManagementBasePanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 1130, 750));
@@ -823,6 +847,7 @@ public class BaseFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
